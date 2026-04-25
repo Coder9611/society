@@ -1,0 +1,111 @@
+.hud-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin: 16px;
+  position: relative;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.hud-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-orb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.hud-logo h1 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hud-metrics {
+  display: flex;
+  gap: 32px;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.metric-icon {
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  box-sizing: content-box;
+}
+
+.metric-icon.highlight {
+  color: var(--cat-safety);
+  box-shadow: inset 0 0 8px rgba(255, 59, 59, 0.2);
+}
+
+.metric-icon.success {
+  color: var(--cat-greenery);
+  box-shadow: inset 0 0 8px rgba(0, 255, 135, 0.2);
+}
+
+.metric-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-text span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.metric-text strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.view-toggle {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  color: white;
+}
+
+.toggle-btn.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
