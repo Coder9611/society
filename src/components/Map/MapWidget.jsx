@@ -95,7 +95,7 @@ const MapWidget = () => {
   const { issues } = usePolis();
 
   // The API key provided by the user
-  const apiKey = 'AIzaSyCcWkHsHdx9chup6yIkdQt3VdeswzfQFAA';
+  const apiKey = '';
 
   return (
     <div style={{width: '100%', height: '100%', position: 'relative', borderRadius: 24, overflow: 'hidden'}}>
